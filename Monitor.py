@@ -23,6 +23,12 @@ while True:
     msg = 'Subject: Your Bot here. It looks like the price of the vega 56 on PCCG dropped below $620 aud'
     fromaddr = ''
     toaddrs = ''
+
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login("YOUR_EMAIL_ADDRESS", "YOUR_PASSWORD")
     for n in price:
         if n < 620:
-
+            server.sendmail(fromaddr, toaddrs, msg)
+            print("Price goal has been met")
+            break
