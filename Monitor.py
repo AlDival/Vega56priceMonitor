@@ -32,3 +32,7 @@ while True:
             server.sendmail(fromaddr, toaddrs, msg)
             print("Price goal has been met")
             break
+        else:
+            print("Wel Nothing to report Yet")
+            time.sleep(60)
+            continue
