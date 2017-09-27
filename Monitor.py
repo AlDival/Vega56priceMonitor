@@ -24,7 +24,8 @@ while True:
     #server.starttls()
     #server.login("YOUR_EMAIL_ADDRESS", "YOUR_PASSWORD")
     for n in price:
-        if int(n) < 620:
+        n = int(n)
+        if n < 620:
             server.sendmail(fromaddr, toaddrs, msg)
             print("Price goal has been met")
             break
