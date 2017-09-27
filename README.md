@@ -1,2 +1,2 @@
 # Vega56priceMonitor
-You need to install Bs4 in order to use this. I may try to stand up a lxml version
+It runs on LXML which is installed by default in most versions of python. To check installation run the comman '''pip install LXML'''
