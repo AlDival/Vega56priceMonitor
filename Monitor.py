@@ -30,6 +30,6 @@ while True:
             print("Price goal has been met")
             break
         else:
-            print("Wel Nothing to report Yet")
+            print("Well Nothing to report Yet")
             time.sleep(60)
             continue
